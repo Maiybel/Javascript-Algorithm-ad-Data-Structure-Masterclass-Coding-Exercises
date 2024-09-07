@@ -55,27 +55,3 @@ class DoublyLinkedList {
     return removedNode;
   }
 }
-
-// Example usage
-const doublyLinkedList = new DoublyLinkedList();
-doublyLinkedList.push(5);
-console.log(doublyLinkedList.length); // 1
-console.log(doublyLinkedList.head.val); // 5
-console.log(doublyLinkedList.tail.val); // 5
-
-doublyLinkedList.push(10);
-console.log(doublyLinkedList.length); // 2
-console.log(doublyLinkedList.head.next.val); // 10
-console.log(doublyLinkedList.tail.val); // 10
-
-doublyLinkedList.push(15);
-console.log(doublyLinkedList.length); // 3
-console.log(doublyLinkedList.head.next.next.val); // 15
-console.log(doublyLinkedList.tail.prev.val); // 10
-
-doublyLinkedList.pop();
-console.log(doublyLinkedList.length); // 2
-doublyLinkedList.pop();
-console.log(doublyLinkedList.length); // 1
-doublyLinkedList.pop();
-console.log(doublyLinkedList.length); // 0

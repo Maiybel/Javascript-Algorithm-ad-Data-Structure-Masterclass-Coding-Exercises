@@ -63,27 +63,3 @@ class DoublyLinkedList {
     return removedNode;
   }
 }
-
-const doublyLinkedList = new DoublyLinkedList();
-doublyLinkedList.unshift(5);
-console.log(doublyLinkedList.length); // 1
-console.log(doublyLinkedList.head.val); // 5
-console.log(doublyLinkedList.tail.val); // 5
-
-doublyLinkedList.unshift(10);
-console.log(doublyLinkedList.length); // 2
-console.log(doublyLinkedList.head.val); // 10
-console.log(doublyLinkedList.tail.val); // 5
-
-doublyLinkedList.unshift(15);
-console.log(doublyLinkedList.length); // 3
-console.log(doublyLinkedList.head.val); // 15
-console.log(doublyLinkedList.tail.val); // 5
-
-console.log(doublyLinkedList.shift().val); // 15
-console.log(doublyLinkedList.length); // 2
-console.log(doublyLinkedList.shift().val); // 10
-console.log(doublyLinkedList.length); // 1
-console.log(doublyLinkedList.shift().val); // 5
-console.log(doublyLinkedList.length); // 0
-console.log(doublyLinkedList.shift()); // undefined
