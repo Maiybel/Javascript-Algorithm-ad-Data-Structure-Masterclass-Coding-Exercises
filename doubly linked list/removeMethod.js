@@ -105,13 +105,3 @@ class DoublyLinkedList {
     return removedNode;
   }
 }
-
-// Example usage:
-const doublyLinkedList = new DoublyLinkedList();
-doublyLinkedList.push(5).push(10).push(15).push(20);
-console.log(doublyLinkedList.remove(2).val); // 15
-console.log(doublyLinkedList.remove(100)); // undefined
-console.log(doublyLinkedList.length); // 3
-console.log(doublyLinkedList.head.val); // 5
-console.log(doublyLinkedList.head.next.val); // 10
-console.log(doublyLinkedList.head.next.next.val); // 20
